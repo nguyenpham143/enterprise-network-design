@@ -1,0 +1,11 @@
+terminal length 0
+HCMC-EDGE-RTR01#enable
+HCMC-EDGE-RTR01#show ip dhcp binding
+Bindings from all pools not associated with VRF:
+IP address          Client-ID/	 	    Lease expiration        Type
+		    Hardware address/
+		    User name
+10.20.16.10         0100.5079.6668.03       Nov 15 2026 11:38 AM    Automatic
+10.20.30.10         0100.5079.6668.04       Nov 15 2026 11:38 AM    Automatic
+10.30.80.10         0100.5079.6668.05       Nov 15 2026 11:38 AM    Automatic
+HCMC-EDGE-RTR01#

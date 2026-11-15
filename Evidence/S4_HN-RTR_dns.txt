@@ -1,0 +1,4 @@
+terminal length 0
+HANOI-RND-RTR01#enable
+HANOI-RND-RTR01#ping srv.tvi.lab
+Translating "srv.tvi.lab"...domain server (10.10.47.10)

@@ -1,0 +1,12 @@
+terminal length 0
+HCMC-DIST-SW02#enable
+HCMC-DIST-SW02#show standby brief
+                     P indicates configured to preempt.
+                     |
+Interface   Grp  Pri P State   Active          Standby         Virtual IP
+Vl10        10   100 P Standby 10.10.44.2      local           10.10.44.1
+Vl40        40   100 P Standby 10.10.40.2      local           10.10.40.1
+Vl50        50   100 P Standby 10.10.0.2       local           10.10.0.1
+Vl99        99   100 P Standby 10.10.46.2      local           10.10.46.1
+Vl100       100  100 P Standby 10.10.47.2      local           10.10.47.1
+HCMC-DIST-SW02#

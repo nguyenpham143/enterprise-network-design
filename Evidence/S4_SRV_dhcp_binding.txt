@@ -1,0 +1,8 @@
+terminal length 0
+SRV-DHCP-DNS#enable
+SRV-DHCP-DNS#show ip dhcp binding
+Bindings from all pools not associated with VRF:
+IP address          Client-ID/	 	    Lease expiration        Type
+		    Hardware address/
+		    User name
+SRV-DHCP-DNS#
