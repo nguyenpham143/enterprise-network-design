@@ -1,0 +1,24 @@
+terminal length 0
+HCMC-CORE-SW01#enable
+HCMC-CORE-SW01#show spanning-tree vlan 901
+
+VLAN0901
+  Spanning tree enabled protocol rstp
+  Root ID    Priority    25477
+             Address     0c49.47f7.0000
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    25477  (priority 24576 sys-id-ext 901)
+             Address     0c49.47f7.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Po1                 Desg FWD 3         128.65   Shr 
+
+
+HCMC-CORE-SW01#show run | include spanning-tree vlan
+spanning-tree vlan 900-902 priority 24576
+HCMC-CORE-SW01#

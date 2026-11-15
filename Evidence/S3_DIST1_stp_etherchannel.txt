@@ -1,0 +1,45 @@
+terminal length 0
+HCMC-DIST-SW01>enable
+Password: 
+HCMC-DIST-SW01#show spanning-tree vlan 10
+
+VLAN0010
+  Spanning tree enabled protocol rstp
+  Root ID    Priority    24586
+             Address     0c10.c277.0000
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    24586  (priority 24576 sys-id-ext 10)
+             Address     0c10.c277.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/3               Desg FWD 4         128.4    Shr 
+Po3                 Desg FWD 4         128.66   Shr 
+
+
+HCMC-DIST-SW01#show etherchannel summary
+Flags:  D - down        P - bundled in port-channel
+        I - stand-alone s - suspended
+        H - Hot-standby (LACP only)
+        R - Layer3      S - Layer2
+        U - in use      f - failed to allocate aggregator
+
+        M - not in use, minimum links not met
+        u - unsuitable for bundling
+        w - waiting to be aggregated
+        d - default port
+
+
+Number of channel-groups in use: 2
+Number of aggregators:           2
+
+Group  Port-channel  Protocol    Ports
+------+-------------+-----------+-----------------------------------------------
+1      Po1(SU)         LACP      Gi0/1(P)    Gi0/2(P)    
+3      Po3(SU)         LACP      Gi1/0(P)    Gi1/1(D)    
+
+HCMC-DIST-SW01#

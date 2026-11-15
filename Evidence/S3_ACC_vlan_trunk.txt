@@ -1,0 +1,36 @@
+terminal length 0
+HCMC-ACC-SW01>enable
+Password: 
+HCMC-ACC-SW01#show vlan brief
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    
+10   EXEC_FINANCE                     active    Gi0/2
+40   GUEST                            active    Gi0/3
+50   VOICE                            active    Gi1/0
+99   MANAGEMENT                       active    Gi1/2
+100  SERVERS                          active    Gi1/1
+999  BLACKHOLE                        active    Gi1/3
+1002 fddi-default                     act/unsup 
+1003 trcrf-default                    act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trbrf-default                    act/unsup 
+HCMC-ACC-SW01#show interfaces trunk
+
+Port        Mode             Encapsulation  Status        Native vlan
+Gi0/0       on               802.1q         trunking      1
+Gi0/1       on               802.1q         trunking      1
+
+Port        Vlans allowed on trunk
+Gi0/0       10,40,50,99-100
+Gi0/1       10,40,50,99-100
+
+Port        Vlans allowed and active in management domain
+Gi0/0       10,40,50,99-100
+Gi0/1       10,40,50,99-100
+
+Port        Vlans in spanning tree forwarding state and not pruned
+Gi0/0       10,40,50,99-100
+Gi0/1       10,40,50,99-100
+HCMC-ACC-SW01#

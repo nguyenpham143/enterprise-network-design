@@ -1,0 +1,25 @@
+terminal length 0
+HCMC-DIST-SW02>enable
+Password: 
+HCMC-DIST-SW02#show spanning-tree vlan 10
+
+VLAN0010
+  Spanning tree enabled protocol rstp
+  Root ID    Priority    24586
+             Address     0c10.c277.0000
+             Cost        8
+             Port        4 (GigabitEthernet0/3)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    28682  (priority 28672 sys-id-ext 10)
+             Address     0c34.94a5.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi0/3               Root FWD 4         128.4    Shr 
+Po3                 Altn BLK 100       128.65   Shr 
+
+
+HCMC-DIST-SW02#

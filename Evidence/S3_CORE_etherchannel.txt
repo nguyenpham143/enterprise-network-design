@@ -1,0 +1,25 @@
+terminal length 0
+HCMC-CORE-SW01>enable
+Password: 
+HCMC-CORE-SW01#show etherchannel summary
+Flags:  D - down        P - bundled in port-channel
+        I - stand-alone s - suspended
+        H - Hot-standby (LACP only)
+        R - Layer3      S - Layer2
+        U - in use      f - failed to allocate aggregator
+
+        M - not in use, minimum links not met
+        u - unsuitable for bundling
+        w - waiting to be aggregated
+        d - default port
+
+
+Number of channel-groups in use: 2
+Number of aggregators:           2
+
+Group  Port-channel  Protocol    Ports
+------+-------------+-----------+-----------------------------------------------
+1      Po1(SU)         LACP      Gi0/1(P)    Gi0/2(P)    
+2      Po2(SU)         LACP      Gi0/3(P)    Gi1/0(P)    
+
+HCMC-CORE-SW01#
