@@ -1,0 +1,83 @@
+terminal length 0
+HCMC-DIST-SW01#enable
+HCMC-DIST-SW01#show ip route ospf
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+
+Gateway of last resort is 10.10.255.69 to network 0.0.0.0
+
+O*E2  0.0.0.0/0 [110/1] via 10.10.255.69, 00:26:40, Vlan901
+      10.0.0.0/8 is variably subnetted, 18 subnets, 6 masks
+O IA     10.10.255.1/32 [110/3] via 10.10.255.69, 00:26:40, Vlan901
+O IA     10.10.255.2/32 [110/2] via 10.10.255.69, 00:26:40, Vlan901
+O        10.10.255.4/32 [110/22] via 10.10.255.69, 00:26:30, Vlan901
+O IA     10.10.255.64/30 [110/2] via 10.10.255.69, 00:26:40, Vlan901
+O        10.10.255.72/30 [110/21] via 10.10.255.69, 00:26:30, Vlan901
+HCMC-DIST-SW01#show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  administratively down down    
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  administratively down down    
+GigabitEthernet1/2     unassigned      YES unset  administratively down down    
+GigabitEthernet1/3     unassigned      YES unset  administratively down down    
+Port-channel3          unassigned      YES unset  up                    up      
+Port-channel1          unassigned      YES unset  up                    up      
+Loopback0              10.10.255.3     YES NVRAM  up                    up      
+Vlan10                 10.10.44.2      YES NVRAM  up                    up      
+Vlan40                 10.10.40.2      YES NVRAM  up                    up      
+Vlan50                 10.10.0.2       YES NVRAM  up                    up      
+Vlan99                 10.10.46.2      YES NVRAM  up                    up      
+Vlan100                10.10.47.2      YES NVRAM  up                    up      
+Vlan901                10.10.255.70    YES NVRAM  up                    up      
+HCMC-DIST-SW01#show ipv6 interface brief
+GigabitEthernet0/0     [administratively down/down]
+    unassigned
+GigabitEthernet0/1     [up/up]
+    unassigned
+GigabitEthernet0/2     [up/up]
+    unassigned
+GigabitEthernet0/3     [up/up]
+    unassigned
+GigabitEthernet1/0     [up/up]
+    unassigned
+GigabitEthernet1/1     [administratively down/down]
+    unassigned
+GigabitEthernet1/2     [administratively down/down]
+    unassigned
+GigabitEthernet1/3     [administratively down/down]
+    unassigned
+Port-channel3          [up/up]
+    unassigned
+Port-channel1          [up/up]
+    unassigned
+Loopback0              [up/up]
+    FE80::E10:C2FF:FE77:0
+    2001:DB8:10:FFFF::3
+Vlan10                 [up/up]
+    FE80::E10:C2FF:FE77:800A
+    2001:DB8:10:10::2
+Vlan40                 [up/up]
+    unassigned
+Vlan50                 [up/up]
+    FE80::E10:C2FF:FE77:8032
+    2001:DB8:10:50::2
+Vlan99                 [up/up]
+    FE80::E10:C2FF:FE77:8063
+    2001:DB8:10:99::2
+Vlan100                [up/up]
+    FE80::E10:C2FF:FE77:8064
+    2001:DB8:10:100::2
+Vlan901                [up/up]
+    FE80::E10:C2FF:FE77:8385
+    2001:DB8:10:FF02::2
+HCMC-DIST-SW01#

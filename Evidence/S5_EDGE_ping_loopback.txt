@@ -1,0 +1,9 @@
+terminal length 0
+HCMC-EDGE-RTR01#enable
+HCMC-EDGE-RTR01#ping 10.10.255.4 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.10.255.4, timeout is 2 seconds:
+Packet sent with a source address of 10.10.255.1 
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 2/3/5 ms
+HCMC-EDGE-RTR01#

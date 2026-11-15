@@ -1,0 +1,17 @@
+terminal length 0
+HCMC-CORE-SW01#enable
+HCMC-CORE-SW01#show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+10.10.255.1       1   FULL/DR         00:00:39    10.10.255.65    Vlan900
+10.10.255.4       1   FULL/DR         00:00:36    10.10.255.74    Vlan902
+10.10.255.3       1   FULL/DR         00:00:36    10.10.255.70    Vlan901
+HCMC-CORE-SW01#show ip ospf | include Area|area border
+ It is an area border router
+    Area BACKBONE(0)
+	Area has no authentication
+	Area ranges are
+    Area 10
+	Area has no authentication
+	Area ranges are
+HCMC-CORE-SW01#

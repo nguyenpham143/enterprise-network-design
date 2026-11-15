@@ -1,0 +1,13 @@
+terminal length 0
+HANOI-RND-RTR01#enable
+HANOI-RND-RTR01#show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+10.20.255.2       1   FULL/BDR        00:00:39    10.20.32.11     GigabitEthernet0/1.99
+HANOI-RND-RTR01#ping 10.20.255.2 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.20.255.2, timeout is 2 seconds:
+Packet sent with a source address of 10.20.255.1 
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/4/8 ms
+HANOI-RND-RTR01#
