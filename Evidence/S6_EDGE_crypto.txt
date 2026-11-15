@@ -1,0 +1,20 @@
+terminal length 0
+HCMC-EDGE-RTR01#enable
+HCMC-EDGE-RTR01#show crypto isakmp sa
+IPv4 Crypto ISAKMP SA
+dst             src             state          conn-id status
+203.0.113.2     203.0.113.10    QM_IDLE           1002 ACTIVE
+203.0.113.2     203.0.113.6     QM_IDLE           1004 ACTIVE
+203.0.113.10    203.0.113.2     QM_IDLE           1001 ACTIVE
+203.0.113.6     203.0.113.2     QM_IDLE           1003 ACTIVE
+
+IPv6 Crypto ISAKMP SA
+
+HCMC-EDGE-RTR01#show crypto ipsec sa | include interface|encaps|decaps
+interface: Tunnel1
+    #pkts encaps: 178, #pkts encrypt: 178, #pkts digest: 178
+    #pkts decaps: 178, #pkts decrypt: 178, #pkts verify: 178
+interface: Tunnel0
+    #pkts encaps: 245, #pkts encrypt: 245, #pkts digest: 245
+    #pkts decaps: 243, #pkts decrypt: 243, #pkts verify: 243
+HCMC-EDGE-RTR01#
