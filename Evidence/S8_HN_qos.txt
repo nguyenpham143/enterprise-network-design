@@ -1,0 +1,57 @@
+terminal length 0
+HANOI-RND-RTR01#enable
+HANOI-RND-RTR01#show policy-map interface Gi0/0 output
+ GigabitEthernet0/0 
+
+  Service-policy output: WAN-OUT
+
+    Class-map: class-default (match-any)  
+      551 packets, 76360 bytes
+      5 minute offered rate 0000 bps, drop rate 0000 bps
+      Match: any 
+      Queueing
+      queue limit 64 packets
+      (queue depth/total drops/no-buffer drops) 0/0/0
+      (pkts output/bytes output) 551/76360
+      shape (average) cir 10000000, bc 40000, be 40000
+      target shape rate 10000000
+
+      Service-policy : WAN-CHILD
+
+        queue stats for all priority classes:
+          Queueing
+          queue limit 64 packets
+          (queue depth/total drops/no-buffer drops) 0/0/0
+          (pkts output/bytes output) 20/3400
+
+        Class-map: DSCP-EF (match-any)  
+          20 packets, 3400 bytes
+          5 minute offered rate 0000 bps, drop rate 0000 bps
+          Match:  dscp ef (46)
+            20 packets, 3400 bytes
+            5 minute rate 0 bps
+          Priority: 30% (3000 kbps), burst bytes 75000, b/w exceed drops: 0
+          
+
+        Class-map: DSCP-AF31 (match-any)  
+          5 packets, 850 bytes
+          5 minute offered rate 0000 bps, drop rate 0000 bps
+          Match:  dscp af31 (26)
+            5 packets, 850 bytes
+            5 minute rate 0 bps
+          Queueing
+          queue limit 64 packets
+          (queue depth/total drops/no-buffer drops) 0/0/0
+          (pkts output/bytes output) 5/850
+          bandwidth 25% (2500 kbps)
+
+        Class-map: class-default (match-any)  
+          526 packets, 72110 bytes
+          5 minute offered rate 0000 bps, drop rate 0000 bps
+          Match: any 
+          Queueing
+          queue limit 64 packets
+          (queue depth/total drops/no-buffer drops/flowdrops) 0/0/0/0
+          (pkts output/bytes output) 526/72110
+          Fair-queue: per-flow queue limit 16 packets
+HANOI-RND-RTR01#
