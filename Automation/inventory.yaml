@@ -1,0 +1,24 @@
+# TVI devices managed by auto_provision.py
+# ip = management address (TVI-IP-Schema.md): switches use VLAN 99, CORE and routers use Loopback0.
+# vlans = VLANs this device must have; empty list = baseline + backup only.
+devices:
+  - {hostname: HCMC-DIST-SW01,   ip: 10.10.46.2,  device_type: cisco_ios, port: 22, vlans: [10, 40, 50, 99, 100]}
+  - {hostname: HCMC-DIST-SW02,   ip: 10.10.46.3,  device_type: cisco_ios, port: 22, vlans: [10, 40, 50, 99, 100]}
+  - {hostname: HCMC-ACC-SW01,    ip: 10.10.46.11, device_type: cisco_ios, port: 22, vlans: [10, 40, 50, 99, 100]}
+  - {hostname: HCMC-CORE-SW01,   ip: 10.10.255.2, device_type: cisco_ios, port: 22, vlans: []}
+  - {hostname: HCMC-EDGE-RTR01,  ip: 10.10.255.1, device_type: cisco_ios, port: 22, vlans: []}
+  - {hostname: HANOI-RND-RTR01,  ip: 10.20.255.1, device_type: cisco_ios, port: 22, vlans: []}
+  - {hostname: HANOI-RND-SW01,   ip: 10.20.32.11, device_type: cisco_ios, port: 22, vlans: [20, 40, 99]}
+  - {hostname: HANOI-RND-SW02,   ip: 10.20.32.12, device_type: cisco_ios, port: 22, vlans: [20, 40, 99]}
+  - {hostname: DANANG-LOG-RTR01, ip: 10.30.255.1, device_type: cisco_ios, port: 22, vlans: []}
+  - {hostname: DANANG-LOG-SW01,  ip: 10.30.90.11, device_type: cisco_ios, port: 22, vlans: [30, 40, 60, 99]}
+
+vlan_names:
+  10: EXEC_FINANCE
+  20: RND_ENGINEERING
+  30: LOGISTICS_OPS
+  40: GUEST
+  50: VOICE
+  60: IOT
+  99: MANAGEMENT
+  100: SERVERS
