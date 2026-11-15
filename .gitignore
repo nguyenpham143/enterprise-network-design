@@ -1,0 +1,19 @@
+# GNS3 runtime files (VM disks/overlays live on the GNS3 VM; portable export is too big for git)
+project-files/
+GNS3/*.gns3project
+*.gns3.backup
+*.log.old
+
+# Old Packet Tracer design and files not part of the GNS3 submission
+TVI-Network.pkt
+TVI-Plan-v1.md
+TVI-Plan-v1.1.md
+TVI-Logical-Topology.drawio
+TVI-Logical-Topology-chi-tiet.drawio
+TVI Network Topology.pdf
+assignment2-report.pdf
+Assignment 1 - *.pdf
+
+# Python
+__pycache__/
+*.pyc
