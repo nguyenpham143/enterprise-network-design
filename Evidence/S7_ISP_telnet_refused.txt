@@ -1,0 +1,7 @@
+terminal length 0
+ISP-RTR01#enable
+ISP-RTR01#telnet 203.0.113.2
+Trying 203.0.113.2 ... 
+% Connection refused by remote host
+
+ISP-RTR01#

@@ -1,0 +1,8 @@
+terminal length 0
+SRV-DHCP-DNS#enable
+SRV-DHCP-DNS#show run | include ip http
+no ip http server
+ip http secure-server
+SRV-DHCP-DNS#show ip http server secure status | include status
+HTTP secure server status: Enabled
+SRV-DHCP-DNS#

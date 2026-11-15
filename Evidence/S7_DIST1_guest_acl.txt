@@ -1,0 +1,11 @@
+terminal length 0
+HCMC-DIST-SW01>enable
+Password: 
+HCMC-DIST-SW01#show access-lists GUEST-IN
+Extended IP access list GUEST-IN
+    10 permit udp any eq bootpc any eq bootps (5 matches)
+    20 permit udp any host 10.10.47.10 eq domain
+    30 permit tcp any host 10.10.47.10 eq domain
+    40 deny ip any 10.0.0.0 0.255.255.255 (3 matches)
+    50 permit ip any any (643 matches)
+HCMC-DIST-SW01#

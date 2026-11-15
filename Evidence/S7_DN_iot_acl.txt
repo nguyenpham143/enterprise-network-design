@@ -1,0 +1,20 @@
+terminal length 0
+DANANG-LOG-RTR01#enable
+DANANG-LOG-RTR01#show access-lists IOT-ISOLATION
+Extended IP access list IOT-ISOLATION
+    10 permit ip 10.30.0.0 0.0.63.255 host 10.10.47.10 (4 matches)
+    20 deny ip 10.30.0.0 0.0.63.255 10.0.0.0 0.255.255.255 (12 matches)
+    30 permit ip any any (4 matches)
+DANANG-LOG-RTR01#show ip interface Gi0/1.60 | include access list|Internet ad$erface Gi0/1.60 | include access list|Internet add         ress
+  Internet address is 10.30.0.1/18
+  Outgoing access list is not set
+  Inbound  access list is IOT-ISOLATION
+DANANG-LOG-RTR01#show ip ospf | include Area|area border
+ It is an area border and autonomous system boundary router
+    Area BACKBONE(0)
+	Area has no authentication
+	Area ranges are
+    Area 30
+	Area has no authentication
+	Area ranges are
+DANANG-LOG-RTR01#
