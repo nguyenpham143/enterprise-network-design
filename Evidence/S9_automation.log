@@ -1,0 +1,165 @@
+2026-11-12 04:32:35,041 - INFO - === run started: 3 device(s) ===
+2026-11-12 04:32:36,251 - INFO - HCMC-DIST-SW01: before backup saved to backups/HCMC-DIST-SW01_20261112_043235_backup.cfg
+2026-11-12 04:32:45,355 - INFO - HCMC-DIST-SW01: after backup saved to backups/HCMC-DIST-SW01_20261112_043244_backup.cfg
+2026-11-12 04:32:45,356 - INFO - HCMC-DIST-SW01: applied 18 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^; vlan 10; name EXEC_FINANCE; exit; vlan 40; name GUEST; exit; vlan 50; name VOICE; exit; vlan 100; name SERVERS; exit
+2026-11-12 04:32:48,973 - INFO - HCMC-DIST-SW02: before backup saved to backups/HCMC-DIST-SW02_20261112_043248_backup.cfg
+2026-11-12 04:32:58,021 - INFO - HCMC-DIST-SW02: after backup saved to backups/HCMC-DIST-SW02_20261112_043257_backup.cfg
+2026-11-12 04:32:58,021 - INFO - HCMC-DIST-SW02: applied 18 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^; vlan 10; name EXEC_FINANCE; exit; vlan 40; name GUEST; exit; vlan 50; name VOICE; exit; vlan 100; name SERVERS; exit
+2026-11-12 04:33:01,273 - INFO - HCMC-ACC-SW01: before backup saved to backups/HCMC-ACC-SW01_20261112_043300_backup.cfg
+2026-11-12 04:33:10,746 - INFO - HCMC-ACC-SW01: after backup saved to backups/HCMC-ACC-SW01_20261112_043310_backup.cfg
+2026-11-12 04:33:10,746 - INFO - HCMC-ACC-SW01: applied 18 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^; vlan 10; name EXEC_FINANCE; exit; vlan 40; name GUEST; exit; vlan 50; name VOICE; exit; vlan 100; name SERVERS; exit
+2026-11-12 04:33:12,954 - INFO - === run finished ===
+2026-11-12 18:44:48,838 - INFO - === run started: 10 device(s) ===
+2026-11-12 18:44:48,844 - ERROR - HCMC-DIST-SW01 (10.10.46.2): connection timed out
+2026-11-12 18:44:51,900 - ERROR - HCMC-DIST-SW02 (10.10.46.3): connection timed out
+2026-11-12 18:44:52,535 - INFO - HCMC-ACC-SW01: before backup saved to backups/HCMC-ACC-SW01_20261112_184452_backup.cfg
+2026-11-12 18:44:52,747 - INFO - HCMC-ACC-SW01: no changes
+2026-11-12 18:44:59,956 - ERROR - HCMC-CORE-SW01 (10.10.255.2): connection timed out
+2026-11-12 18:45:04,961 - ERROR - HCMC-EDGE-RTR01 (10.10.255.1): connection timed out
+2026-11-12 18:45:09,967 - ERROR - HANOI-RND-RTR01 (10.20.255.1): connection timed out
+2026-11-12 18:45:14,973 - ERROR - HANOI-RND-SW01 (10.20.32.11): connection timed out
+2026-11-12 18:45:19,979 - ERROR - HANOI-RND-SW02 (10.20.32.12): connection timed out
+2026-11-12 18:45:24,988 - ERROR - DANANG-LOG-RTR01 (10.30.255.1): connection timed out
+2026-11-12 18:45:29,993 - ERROR - DANANG-LOG-SW01 (10.30.90.11): connection timed out
+2026-11-12 18:45:29,993 - INFO - === run finished ===
+2026-11-12 19:29:02,439 - INFO - === run started: 10 device(s) ===
+2026-11-12 19:29:03,164 - INFO - HCMC-DIST-SW01: before backup saved to backups/HCMC-DIST-SW01_20261112_192902_backup.cfg
+2026-11-12 19:29:03,420 - INFO - HCMC-DIST-SW01: no changes
+2026-11-12 19:29:08,334 - INFO - HCMC-DIST-SW02: before backup saved to backups/HCMC-DIST-SW02_20261112_192908_backup.cfg
+2026-11-12 19:29:08,579 - INFO - HCMC-DIST-SW02: no changes
+2026-11-12 19:29:11,403 - INFO - HCMC-ACC-SW01: before backup saved to backups/HCMC-ACC-SW01_20261112_192911_backup.cfg
+2026-11-12 19:29:11,614 - INFO - HCMC-ACC-SW01: no changes
+2026-11-12 19:29:14,776 - INFO - HCMC-CORE-SW01: before backup saved to backups/HCMC-CORE-SW01_20261112_192914_backup.cfg
+2026-11-12 19:29:18,515 - INFO - HCMC-CORE-SW01: after backup saved to backups/HCMC-CORE-SW01_20261112_192918_backup.cfg
+2026-11-12 19:29:18,515 - INFO - HCMC-CORE-SW01: applied 6 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^
+2026-11-12 19:29:22,883 - INFO - HCMC-EDGE-RTR01: before backup saved to backups/HCMC-EDGE-RTR01_20261112_192921_backup.cfg
+2026-11-12 19:29:28,100 - INFO - HCMC-EDGE-RTR01: after backup saved to backups/HCMC-EDGE-RTR01_20261112_192926_backup.cfg
+2026-11-12 19:29:28,100 - INFO - HCMC-EDGE-RTR01: applied 6 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^
+2026-11-12 19:29:32,207 - INFO - HANOI-RND-RTR01: before backup saved to backups/HANOI-RND-RTR01_20261112_192930_backup.cfg
+2026-11-12 19:29:37,196 - INFO - HANOI-RND-RTR01: after backup saved to backups/HANOI-RND-RTR01_20261112_192935_backup.cfg
+2026-11-12 19:29:37,196 - INFO - HANOI-RND-RTR01: applied 6 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^
+2026-11-12 19:29:40,492 - INFO - HANOI-RND-SW01: before backup saved to backups/HANOI-RND-SW01_20261112_192940_backup.cfg
+2026-11-12 19:29:44,682 - INFO - HANOI-RND-SW01: after backup saved to backups/HANOI-RND-SW01_20261112_192944_backup.cfg
+2026-11-12 19:29:44,682 - INFO - HANOI-RND-SW01: applied 6 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^
+2026-11-12 19:29:51,891 - ERROR - HANOI-RND-SW02 (10.20.32.12): connection timed out
+2026-11-12 19:29:53,840 - INFO - DANANG-LOG-RTR01: before backup saved to backups/DANANG-LOG-RTR01_20261112_192952_backup.cfg
+2026-11-12 19:29:58,831 - INFO - DANANG-LOG-RTR01: after backup saved to backups/DANANG-LOG-RTR01_20261112_192957_backup.cfg
+2026-11-12 19:29:58,831 - INFO - DANANG-LOG-RTR01: applied 6 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^
+2026-11-12 19:30:02,196 - INFO - DANANG-LOG-SW01: before backup saved to backups/DANANG-LOG-SW01_20261112_193001_backup.cfg
+2026-11-12 19:30:06,083 - INFO - DANANG-LOG-SW01: after backup saved to backups/DANANG-LOG-SW01_20261112_193005_backup.cfg
+2026-11-12 19:30:06,083 - INFO - DANANG-LOG-SW01: applied 6 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^
+2026-11-12 19:30:08,286 - INFO - === run finished ===
+2026-11-12 19:40:16,981 - INFO - === run started: 1 device(s) ===
+2026-11-12 19:40:18,177 - INFO - HANOI-RND-SW02: before backup saved to backups/HANOI-RND-SW02_20261112_194017_backup.cfg
+2026-11-12 19:40:22,435 - INFO - HANOI-RND-SW02: after backup saved to backups/HANOI-RND-SW02_20261112_194022_backup.cfg
+2026-11-12 19:40:22,436 - INFO - HANOI-RND-SW02: applied 6 command(s): aaa new-model; aaa authentication login default local; aaa authorization exec default local; ntp server 10.10.47.10; logging host 10.10.47.10; banner motd ^Unauthorized access to TVI network is prohibited^
+2026-11-12 19:40:24,639 - INFO - === run finished ===
+2026-11-12 19:40:24,740 - INFO - === run started: 10 device(s) ===
+2026-11-12 19:40:25,424 - INFO - HCMC-DIST-SW01: before backup saved to backups/HCMC-DIST-SW01_20261112_194025_backup.cfg
+2026-11-12 19:40:25,658 - INFO - HCMC-DIST-SW01: no changes
+2026-11-12 19:40:28,580 - INFO - HCMC-DIST-SW02: before backup saved to backups/HCMC-DIST-SW02_20261112_194028_backup.cfg
+2026-11-12 19:40:28,813 - INFO - HCMC-DIST-SW02: no changes
+2026-11-12 19:40:31,830 - INFO - HCMC-ACC-SW01: before backup saved to backups/HCMC-ACC-SW01_20261112_194031_backup.cfg
+2026-11-12 19:40:32,043 - INFO - HCMC-ACC-SW01: no changes
+2026-11-12 19:40:34,917 - INFO - HCMC-CORE-SW01: before backup saved to backups/HCMC-CORE-SW01_20261112_194034_backup.cfg
+2026-11-12 19:40:35,060 - INFO - HCMC-CORE-SW01: no changes
+2026-11-12 19:40:39,033 - INFO - HCMC-EDGE-RTR01: before backup saved to backups/HCMC-EDGE-RTR01_20261112_194037_backup.cfg
+2026-11-12 19:40:40,025 - INFO - HCMC-EDGE-RTR01: no changes
+2026-11-12 19:40:44,136 - INFO - HANOI-RND-RTR01: before backup saved to backups/HANOI-RND-RTR01_20261112_194042_backup.cfg
+2026-11-12 19:40:45,199 - INFO - HANOI-RND-RTR01: no changes
+2026-11-12 19:40:48,333 - INFO - HANOI-RND-SW01: before backup saved to backups/HANOI-RND-SW01_20261112_194047_backup.cfg
+2026-11-12 19:40:48,649 - INFO - HANOI-RND-SW01: no changes
+2026-11-12 19:40:51,982 - INFO - HANOI-RND-SW02: before backup saved to backups/HANOI-RND-SW02_20261112_194051_backup.cfg
+2026-11-12 19:40:52,302 - INFO - HANOI-RND-SW02: no changes
+2026-11-12 19:40:56,433 - INFO - DANANG-LOG-RTR01: before backup saved to backups/DANANG-LOG-RTR01_20261112_194055_backup.cfg
+2026-11-12 19:40:57,500 - INFO - DANANG-LOG-RTR01: no changes
+2026-11-12 19:41:00,827 - INFO - DANANG-LOG-SW01: before backup saved to backups/DANANG-LOG-SW01_20261112_194100_backup.cfg
+2026-11-12 19:41:01,136 - INFO - DANANG-LOG-SW01: no changes
+2026-11-12 19:41:03,340 - INFO - === run finished ===
+2026-11-12 19:47:06,780 - INFO - === run started: 10 device(s) ===
+2026-11-12 19:47:07,484 - INFO - HCMC-DIST-SW01: before backup saved to backups/HCMC-DIST-SW01_20261112_194707_backup.cfg
+2026-11-12 19:47:07,696 - INFO - HCMC-DIST-SW01: no changes
+2026-11-12 19:47:10,552 - INFO - HCMC-DIST-SW02: before backup saved to backups/HCMC-DIST-SW02_20261112_194710_backup.cfg
+2026-11-12 19:47:10,764 - INFO - HCMC-DIST-SW02: no changes
+2026-11-12 19:47:13,560 - INFO - HCMC-ACC-SW01: before backup saved to backups/HCMC-ACC-SW01_20261112_194713_backup.cfg
+2026-11-12 19:47:13,772 - INFO - HCMC-ACC-SW01: no changes
+2026-11-12 19:47:16,669 - INFO - HCMC-CORE-SW01: before backup saved to backups/HCMC-CORE-SW01_20261112_194716_backup.cfg
+2026-11-12 19:47:16,809 - INFO - HCMC-CORE-SW01: no changes
+2026-11-12 19:47:20,857 - INFO - HCMC-EDGE-RTR01: before backup saved to backups/HCMC-EDGE-RTR01_20261112_194719_backup.cfg
+2026-11-12 19:47:21,846 - INFO - HCMC-EDGE-RTR01: no changes
+2026-11-12 19:47:25,921 - INFO - HANOI-RND-RTR01: before backup saved to backups/HANOI-RND-RTR01_20261112_194724_backup.cfg
+2026-11-12 19:47:26,969 - INFO - HANOI-RND-RTR01: no changes
+2026-11-12 19:47:30,276 - INFO - HANOI-RND-SW01: before backup saved to backups/HANOI-RND-SW01_20261112_194729_backup.cfg
+2026-11-12 19:47:30,532 - INFO - HANOI-RND-SW01: no changes
+2026-11-12 19:47:37,742 - ERROR - HANOI-RND-SW02 (10.20.32.12): connection timed out
+2026-11-12 19:47:39,604 - INFO - DANANG-LOG-RTR01: before backup saved to backups/DANANG-LOG-RTR01_20261112_194738_backup.cfg
+2026-11-12 19:47:40,645 - INFO - DANANG-LOG-RTR01: no changes
+2026-11-12 19:47:43,932 - INFO - DANANG-LOG-SW01: before backup saved to backups/DANANG-LOG-SW01_20261112_194743_backup.cfg
+2026-11-12 19:47:44,219 - INFO - DANANG-LOG-SW01: no changes
+2026-11-12 19:47:46,422 - INFO - === run finished ===
+2026-11-14 10:57:43,322 - INFO - === run started: 10 device(s) ===
+2026-11-14 10:57:44,074 - INFO - HCMC-DIST-SW01: before backup saved to backups/HCMC-DIST-SW01_20261114T105743_backup.cfg
+2026-11-14 10:57:44,310 - INFO - HCMC-DIST-SW01: no changes
+2026-11-14 10:57:48,395 - INFO - HCMC-DIST-SW02: before backup saved to backups/HCMC-DIST-SW02_20261114T105748_backup.cfg
+2026-11-14 10:57:48,629 - INFO - HCMC-DIST-SW02: no changes
+2026-11-14 10:57:51,511 - INFO - HCMC-ACC-SW01: before backup saved to backups/HCMC-ACC-SW01_20261114T105751_backup.cfg
+2026-11-14 10:57:51,725 - INFO - HCMC-ACC-SW01: no changes
+2026-11-14 10:57:54,888 - INFO - HCMC-CORE-SW01: before backup saved to backups/HCMC-CORE-SW01_20261114T105754_backup.cfg
+2026-11-14 10:57:55,039 - INFO - HCMC-CORE-SW01: no changes
+2026-11-14 10:57:59,965 - INFO - HCMC-EDGE-RTR01: before backup saved to backups/HCMC-EDGE-RTR01_20261114T105758_backup.cfg
+2026-11-14 10:58:01,459 - INFO - HCMC-EDGE-RTR01: no changes
+2026-11-14 10:58:06,204 - INFO - HANOI-RND-RTR01: before backup saved to backups/HANOI-RND-RTR01_20261114T105804_backup.cfg
+2026-11-14 10:58:07,402 - INFO - HANOI-RND-RTR01: no changes
+2026-11-14 10:58:10,867 - INFO - HANOI-RND-SW01: before backup saved to backups/HANOI-RND-SW01_20261114T105810_backup.cfg
+2026-11-14 10:58:11,274 - INFO - HANOI-RND-SW01: no changes
+2026-11-14 10:58:14,886 - INFO - HANOI-RND-SW02: before backup saved to backups/HANOI-RND-SW02_20261114T105814_backup.cfg
+2026-11-14 10:58:15,259 - INFO - HANOI-RND-SW02: no changes
+2026-11-14 10:58:20,146 - INFO - DANANG-LOG-RTR01: before backup saved to backups/DANANG-LOG-RTR01_20261114T105818_backup.cfg
+2026-11-14 10:58:21,607 - INFO - DANANG-LOG-RTR01: no changes
+2026-11-14 10:58:25,043 - INFO - DANANG-LOG-SW01: before backup saved to backups/DANANG-LOG-SW01_20261114T105824_backup.cfg
+2026-11-14 10:58:29,685 - INFO - DANANG-LOG-SW01: after backup saved to backups/DANANG-LOG-SW01_20261114T105829_backup.cfg
+2026-11-14 10:58:29,685 - INFO - DANANG-LOG-SW01: applied 3 command(s): vlan 60; name IOT; exit
+2026-11-14 10:58:31,889 - INFO - === run finished ===
+2026-11-14 10:58:32,001 - INFO - === run started: 10 device(s) ===
+2026-11-14 10:58:32,697 - INFO - HCMC-DIST-SW01: before backup saved to backups/HCMC-DIST-SW01_20261114T105832_backup.cfg
+2026-11-14 10:58:32,933 - INFO - HCMC-DIST-SW01: no changes
+2026-11-14 10:58:35,788 - INFO - HCMC-DIST-SW02: before backup saved to backups/HCMC-DIST-SW02_20261114T105835_backup.cfg
+2026-11-14 10:58:36,024 - INFO - HCMC-DIST-SW02: no changes
+2026-11-14 10:58:38,816 - INFO - HCMC-ACC-SW01: before backup saved to backups/HCMC-ACC-SW01_20261114T105838_backup.cfg
+2026-11-14 10:58:39,029 - INFO - HCMC-ACC-SW01: no changes
+2026-11-14 10:58:42,170 - INFO - HCMC-CORE-SW01: before backup saved to backups/HCMC-CORE-SW01_20261114T105841_backup.cfg
+2026-11-14 10:58:42,321 - INFO - HCMC-CORE-SW01: no changes
+2026-11-14 10:58:46,542 - INFO - HCMC-EDGE-RTR01: before backup saved to backups/HCMC-EDGE-RTR01_20261114T105845_backup.cfg
+2026-11-14 10:58:47,583 - INFO - HCMC-EDGE-RTR01: no changes
+2026-11-14 10:58:52,099 - INFO - HANOI-RND-RTR01: before backup saved to backups/HANOI-RND-RTR01_20261114T105850_backup.cfg
+2026-11-14 10:58:53,256 - INFO - HANOI-RND-RTR01: no changes
+2026-11-14 10:58:58,731 - INFO - HANOI-RND-SW01: before backup saved to backups/HANOI-RND-SW01_20261114T105858_backup.cfg
+2026-11-14 10:58:59,065 - INFO - HANOI-RND-SW01: no changes
+2026-11-14 10:59:02,695 - INFO - HANOI-RND-SW02: before backup saved to backups/HANOI-RND-SW02_20261114T105902_backup.cfg
+2026-11-14 10:59:03,250 - INFO - HANOI-RND-SW02: no changes
+2026-11-14 10:59:07,629 - INFO - DANANG-LOG-RTR01: before backup saved to backups/DANANG-LOG-RTR01_20261114T105906_backup.cfg
+2026-11-14 10:59:08,873 - INFO - DANANG-LOG-RTR01: no changes
+2026-11-14 10:59:12,318 - INFO - DANANG-LOG-SW01: before backup saved to backups/DANANG-LOG-SW01_20261114T105911_backup.cfg
+2026-11-14 10:59:12,676 - INFO - DANANG-LOG-SW01: no changes
+2026-11-14 10:59:14,880 - INFO - === run finished ===
+2026-11-14 11:04:08,870 - INFO - === run started: 10 device(s) ===
+2026-11-14 11:04:09,574 - INFO - HCMC-DIST-SW01: before backup saved to backups/HCMC-DIST-SW01_20261114T110409_backup.cfg
+2026-11-14 11:04:09,791 - INFO - HCMC-DIST-SW01: no changes
+2026-11-14 11:04:12,665 - INFO - HCMC-DIST-SW02: before backup saved to backups/HCMC-DIST-SW02_20261114T110412_backup.cfg
+2026-11-14 11:04:12,903 - INFO - HCMC-DIST-SW02: no changes
+2026-11-14 11:04:15,929 - INFO - HCMC-ACC-SW01: before backup saved to backups/HCMC-ACC-SW01_20261114T110415_backup.cfg
+2026-11-14 11:04:16,141 - INFO - HCMC-ACC-SW01: no changes
+2026-11-14 11:04:19,047 - INFO - HCMC-CORE-SW01: before backup saved to backups/HCMC-CORE-SW01_20261114T110418_backup.cfg
+2026-11-14 11:04:19,166 - INFO - HCMC-CORE-SW01: no changes
+2026-11-14 11:04:23,076 - INFO - HCMC-EDGE-RTR01: before backup saved to backups/HCMC-EDGE-RTR01_20261114T110421_backup.cfg
+2026-11-14 11:04:24,035 - INFO - HCMC-EDGE-RTR01: no changes
+2026-11-14 11:04:28,343 - INFO - HANOI-RND-RTR01: before backup saved to backups/HANOI-RND-RTR01_20261114T110427_backup.cfg
+2026-11-14 11:04:29,428 - INFO - HANOI-RND-RTR01: no changes
+2026-11-14 11:04:32,813 - INFO - HANOI-RND-SW01: before backup saved to backups/HANOI-RND-SW01_20261114T110432_backup.cfg
+2026-11-14 11:04:33,126 - INFO - HANOI-RND-SW01: no changes
+2026-11-14 11:04:40,335 - ERROR - HANOI-RND-SW02 (10.20.32.12): connection timed out
+2026-11-14 11:04:42,479 - INFO - DANANG-LOG-RTR01: before backup saved to backups/DANANG-LOG-RTR01_20261114T110440_backup.cfg
+2026-11-14 11:04:43,605 - INFO - DANANG-LOG-RTR01: no changes
+2026-11-14 11:04:46,945 - INFO - DANANG-LOG-SW01: before backup saved to backups/DANANG-LOG-SW01_20261114T110446_backup.cfg
+2026-11-14 11:04:47,273 - INFO - DANANG-LOG-SW01: no changes
+2026-11-14 11:04:49,477 - INFO - === run finished ===
