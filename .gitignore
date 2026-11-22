@@ -1,6 +1,7 @@
 # GNS3 runtime files (VM disks/overlays live on the GNS3 VM; portable export is too big for git)
 project-files/
 GNS3/*.gns3project
+*.gns3project
 *.gns3.backup
 *.log.old
 
@@ -17,3 +18,11 @@ Assignment 1 - *.pdf
 # Python
 __pycache__/
 *.pyc
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+docs/specs

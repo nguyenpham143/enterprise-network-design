@@ -1,5 +1,5 @@
 # TVI devices managed by auto_provision.py
-# ip = management address (TVI-IP-Schema.md): switches use VLAN 99, CORE and routers use Loopback0.
+# ip = management address (docs/design/TVI-IP-Schema.md): switches use VLAN 99, CORE and routers use Loopback0.
 # vlans = VLANs this device must have; empty list = baseline + backup only.
 devices:
   - {hostname: HCMC-DIST-SW01,   ip: 10.10.46.2,  device_type: cisco_ios, port: 22, vlans: [10, 40, 50, 99, 100]}

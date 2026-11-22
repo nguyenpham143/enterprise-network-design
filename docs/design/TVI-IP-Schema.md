@@ -1,6 +1,6 @@
 # TVI Network — IP Addressing Plan (Step 2)
 
-Companion to `TVI-Topology.drawio`. Matches `TVI-Plan-v1.2.md` section 2.4.
+Companion to `../topology/TVI-Topology.drawio`. Matches `TVI-Plan-v1.2.md` section 2.4.
 
 ## 1. Design rules
 

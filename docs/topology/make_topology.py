@@ -1,10 +1,11 @@
-"""Generate TVI-Topology.drawio: 2 plain pages (Physical, Logical) from TVI-Plan-v1.2.md 2.1-2.4.
-Usage: python make_topology.py TVI-Topology.drawio
+"""Generate TVI-Topology.drawio: 2 plain pages (Physical, Logical) from ../design/TVI-Plan-v1.2.md 2.1-2.4.
+Usage: python docs/topology/make_topology.py [output.drawio]
 """
 import html
+import os
 import sys
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else "TVI-Topology.drawio"
+OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "TVI-Topology.drawio")
 
 ICON = {
     "router": "shape=mxgraph.cisco.routers.router;",
